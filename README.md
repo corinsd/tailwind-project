@@ -1,3 +1,7 @@
+# tailwind project
+
+tailwind 적용 고객관리 프로그램 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
