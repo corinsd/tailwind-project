@@ -11,6 +11,7 @@ function Customer(props) {
         <td class="px-6 py-4 ">{props.birthdey}</td>
         <td class="px-6 py-4 ">{props.gender}</td>
         <td class="px-6 py-4 ">{props.job}</td>
+        
           </tr>
     
     )

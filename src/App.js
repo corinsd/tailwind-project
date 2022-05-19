@@ -22,24 +22,26 @@ class App extends Component {
 
   render() {
   return (
-    <div className="App shadow-xl w-full mt-4 overflow-auto" >
-      <table className="min-w-full divide-y divide-gray-200 ">
-        <thead>
-          <tr>
-            <td>번호</td>
-            <td>프로필</td>
-            <td>이름</td>
-            <td>생년월일</td>
-            <td>성별</td>
-            <td>직업</td>
-          </tr>
-        </thead>
-        <tbody className='min-w-full divide-y'>
-          {this.state.customers ? this.state.customers.map(c => 
-          {return(<Customer key={c.id} id={c.id} image={c.image} name={c.name} birthdey={c.birthdey} gender={c.gender} job={c.job}/>)})
-        :""}
-        </tbody>
-     </table>
+    <div class='border-b rounded-t'>
+      <div className="App shadow-2xl w-full mt-4 overflow-auto" >
+        <table className="min-w-full divide-y divide-gray-200 ">
+          <thead>
+            <tr>
+              <td>번호</td>
+              <td>프로필</td>
+              <td>이름</td>
+              <td>생년월일</td>
+              <td>성별</td>
+              <td>직업</td>
+            </tr>
+          </thead>
+          <tbody className='min-w-full divide-y'>
+            {this.state.customers ? this.state.customers.map(c => 
+            {return(<Customer key={c.id} id={c.id} image={c.image} name={c.name} birthdey={c.birthdey} gender={c.gender} job={c.job}/>)})
+          :""}
+          </tbody>
+      </table>
+      </div>
     </div>
   );
 }
